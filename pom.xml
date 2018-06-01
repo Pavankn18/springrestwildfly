@@ -38,12 +38,18 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
+    	<dependency>
+            <groupId>org.glassfish.jersey.ext</groupId>
+            <artifactId>jersey-spring4</artifactId>
+            <version>2.27</version>
+       </dependency>
+    
+       <!--  <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
-            <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
-            <!-- artifactId>jersey-container-servlet</artifactId -->
-        </dependency>
+            use the following artifactId if you don't need servlet 2.x compatibility
+            artifactId>jersey-container-servlet</artifactId
+        </dependency> -->
         <dependency>
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
@@ -60,7 +66,23 @@
        		<artifactId>javax.servlet-api</artifactId>
        		<version>3.0.1</version>
        		<scope>provided</scope>
-       </dependency>
+       </dependency> 
+       
+       <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<dependency>
+		    <groupId>commons-logging</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>1.2</version>
+		</dependency>
+       
+       <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.ext.cdi/jersey-cdi1x -->
+		<dependency>
+		    <groupId>org.glassfish.jersey.ext.cdi</groupId>
+		    <artifactId>jersey-cdi1x</artifactId>
+		    <version>2.15</version>
+		    <scope>provided</scope>
+		</dependency>
+       
        
     </dependencies>
     <properties>
